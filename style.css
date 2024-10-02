@@ -253,7 +253,7 @@ nav {
 }
 
 .box_capitulo {
-    border: 2px solid #cee284; 
+   /* border: 2px solid #cee284; */
     
     padding: 20px;
     display: flex;
@@ -267,7 +267,7 @@ nav {
     
 }
 .dibujo {
-    border: 2px solid #4CAF50; 
+     /*border: 2px solid #4CAF50; */
     background: #fafafa10;
     backdrop-filter: blur(0.4rem);
     
@@ -453,14 +453,14 @@ nav {
 
 .btn-narrativa{
     position: absolute;
-    bottom: 60px;
-    right: 80px;
+    bottom: 15%;
+    right: 10%;
     z-index: 45;
     background: none;
     border: 2px solid #ffd700; 
     border-radius: 10px;
     color: #ffd700; 
-    padding: 10px 20px;
+    padding: 8px 18px;
     font-size: 16px;
     font-family: 'Orbitron', sans-serif;
     cursor: pointer;
@@ -480,38 +480,50 @@ nav {
 /*========== FOOTER ==========*/
 
 footer{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     
+    width: 100%;
     color: #f3dc9c;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    
     padding: 1%;
-    padding-bottom: 0%;
-    gap: 25%;
+    padding-bottom: 0.5%;
+    
     border: 2px solid#fafafa10;
     background: #fafafa10;
     backdrop-filter: blur(0.4rem);
+    
 }
 
-footer > ul{
-    position: relative;
+footer > p{
+    display: flex;
+    justify-content: center;
     
-    list-style: none;
 }
-footer ul > li{
+.footer_redes{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.footer_redes > ul{
+    position: relative;
+    margin: auto;
+    list-style: none;
+
+    border: 2px solid#246e4910;
+}
+.footer_redes ul > li{
     margin-bottom: 15px;
     
 }
-footer ul li a{
+.footer_redes ul li a{
     text-decoration: none;
     list-style: none;
     color: #f3dc9c;
 }
 
-footer ul li::before {
+.footer_redes ul li::before {
     content: '>'; 
     position: relative;
     left: -10px;
@@ -661,29 +673,22 @@ footer ul li::before {
     }
 
     .box_texto {
-        padding: 10px;
-        height: auto; /* Deja que el contenido se ajuste libremente */
+        
+        height: auto; 
     }
 
     .text-img {
-        padding: 10%; /* Reduce el padding para pantallas pequeñas */
+        padding: 10%; 
         font-size: 0.9rem;
     }
-    .main-title {
-       
-       margin: auto;
-       margin-top: 100px;
-        position: static;
-        width: 100%;
-        font-size: 80
-            px; /* Tamaño más pequeño para pantallas pequeñas */
-        }
+
     .box_capitulo {
        
         width: 427px;
-        margin: 10px;
+        
         padding: 10px;
         margin: auto;
+        margin-bottom: 5%;
        
     }
 
@@ -716,14 +721,37 @@ footer ul li::before {
     }
 
     .text-img {
-        padding: 15%; /* Reduce el padding para pantallas pequeñas */
-        font-size: 0.5rem;
+        
+        font-size: 0.7rem;
     }
 
+
+    .btn-narrativa{
+        padding: 5px 15px;
+        font-size: 11px;
+
+    }
+
+    .button-seguir {
+
+        
+        padding: 10px 25px;
+        
+        font-size: 16px;
+        
+    }
     .box_texto img {
-        max-width: 90%; /* Asegura que la imagen no sobresalga del div */
+        
     }
-
+    .main-title {
+       
+        margin: auto;
+        margin-top: 100px;
+        position: static;
+        width: 100%;
+        font-size: 96px; /* Tamaño más pequeño para pantallas pequeñas */
+     }
+ 
 
     .box_capitulo {
        
@@ -741,8 +769,8 @@ footer ul li::before {
 
      footer{
         width: 100%;
-
-        margin: 0;
+        font-size: 12px;
+        
     }
 }
 
