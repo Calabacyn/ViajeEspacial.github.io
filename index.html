@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="icon" href="img/iconastro.png" type="image/x-icon">
+    <title>Viaje Espacial</title>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="container-icon">
+            <a href="#"><img src="img/iconastro.png" alt=""></a>
+            </div>
+
+            <div>
+                <ul class="list-redes">
+                    <li><a href="https://www.facebook.com/p/ISFT-232-100082128423838/" target="_blank"><img src="img/facebook-logo-svgrepo-com.png" alt=""></a></li>
+                    
+                    <li><a href="https://www.instagram.com/isft232_oficial/?hl=es" target="_blank"><img src="img/instagram-svgrepo-com.png" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="box-audioPato">
+        <div class="box_gif">
+            <img id="gif" class="gif" src="video/unscreen-072.png"; alt="duck">
+        </div>
+        <div class="box_audio">
+            <div class="audio-player">
+                <audio id="audio" src="audio/GameOver.mp4" ></audio>
+                <button id="play-pause" class="play"></button>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+    </div>
+
+    <div id="inicio">
+        <h1 class="main-title">
+            <span class="title-part part-1">Viaje</span>
+            <span class="title-part part-2">Espacial</span>
+        </h1>
+        
+        
+        <div id="narrativa" class="box_capitulo narrativa">
+            <div class="box_texto narrativatxt">
+                
+                <img src="img/papelnegro.jpg" alt="">
+                <div class="back-text">
+                    <div class="text-img">
+                        <div id="narrative"><p>En un futuro distante, la galaxia se encontraba en un estado de desequilibrio. Cuatro gemas legendarias, Análisis, Perseverancia, Creatividad y Cooperatividad, habían sido escondidas en la Luna para mantener su poder a salvo. Estas gemas podían otorgar un poder inimaginable a quien las poseyera, pero también podían destruir el universo si caían en las manos equivocadas.</p>
+                        </div> 
+                        <audio id="voz2" src="voz/voz2.mp3"></audio>
+                        <button id="voces2" class="voces"></button>
+
+                        <audio id="voz1" src="voz/voz1.mp3"></audio>
+                        <button id="voces1" class="voces"></button>
+                    </div>
+                    
+                </div>
+                <button id="btn-atras" class="btn-narrativa" onclick="cambiarTexto(-1)" type="button" style="display:none;">Atrás</button>
+                    <button id="btn-siguiente" class="btn-narrativa" onclick="cambiarTexto(1)" type="button">Siguiente</button>
+            </div>
+            <div class="narrativa_img">
+                <img src="img/narrativa1.jpeg" alt="">
+                
+            </div>
+        </div>
+        <div class="box-iniciar">
+        <button onclick="mostrarCapitulo(1, this)" id="cap-button" class="button-seguir button-inicio" type="button">Iniciar</button>
+        </div>
+    </div>
+
+    
+    <div id="capitulo1" class="capitulo">
+    <div class="box_capitulo ">
+        
+        <div class="dibujo">
+            <div class="sketchfab-embed-wrapper"> <iframe title="Anaconda Mk II" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="2000" height="790" src="https://sketchfab.com/models/bb92c08aed064ea9800e7b5d6d4cd641/embed?autostart=1&camera=0&preload=1&ui_hint=0"> </iframe> </div>
+        
+        </div>
+        
+        <div class="box_texto">
+            <img src="img/papelnegro.jpg" alt="">
+            <div class="back-text">
+                <div class="text-img">
+                <h3></h3>
+                <p>Mientras viajaba, Orion fue interceptado por un grupo de comerciantes espaciales, ávidos de poder y riquezas. Estos comerciantes, conocidos por su codicia y astucia, lo perseguían implacablemente. Sin embargo, Orion, demostrando su habilidad y precisión, logró derribar sus naves con un tiro certero, dejando atrás a sus enemigos en el vasto espacio. </p>
+                <audio id="voz3" src="voz/voz3.mp3"></audio>
+                <button id="voces3" class="voces"></button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="box_capitulo ">
+        <div class="box_texto">
+            <img src="img/papelnegro.jpg" alt="">
+            <div class="back-text">
+                <div class="text-img">
+                <h3>Misión: meteoritos</h3>
+                <p>A medida que Orion se acercaba a la Luna, una tormenta de meteoritos emergió de la oscuridad, bloqueando su camino. Fragmentos de roca colosal amenazaban con destruir su nave en cualquier momento.</p> 
+                <p>Es aquí donde tu habilidad se pone a prueba. Debes guiar a Orion a través del caos, maniobrando con precisión para esquivar cada meteorito que se aproxima. El éxito de la misión depende de ti; solo tu destreza puede asegurar que Orion alcance la superficie lunar ileso y continúe su búsqueda de las gemas.  </p>
+                <audio id="voz4" src="voz/voz4.mp3"></audio>
+                <button id="voces4" class="voces"></button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="juego">
+            
+            <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Breakout Videojuego" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/66c6544135799c0462b253ed" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+        </div>
+        
+    </div>
+        <div class="box-seguir">
+            <button onclick="mostrarCapitulo(2, this)" id="cap-button" class="button-seguir seguir" type="button">Siguiente</button>
+        </div>
+    </div>
+
+    <div id="capitulo2" class="capitulo">
+    <div class="box_capitulo">
+
+        <div class="dibujo">
+            <div class="sketchfab-embed-wrapper"> <iframe title="Moon" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="2000" height="790" src="https://sketchfab.com/models/870de693475d436c8e925ab0bcda4ca4/embed?autostart=1&camera=0&preload=1&transparent=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_hint=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0&ui_fullscreen=0&ui_annotations=0"> </iframe> </div>
+        </div>
+        <div class="box_texto">
+            <img src="img/papelnegro.jpg" alt="">
+            <div class="back-text">
+                <div class="text-img">
+                <h3></h3>
+                <p>
+                    Finalmente, Orion logró aterrizar en la superficie lunar, cumpliendo con éxito la primera parte de su misión. La Luna, con su paisaje desolado y enigmático, se extendía ante él. A pesar de su apariencia inhóspita, Orion sabía que su objetivo era claro: llegar a Mare Nubium, una cueva legendaria donde las gemas del poder estaban ocultas. </p>
+                    <audio id="voz5" src="voz/voz5.mp3"></audio>
+                    <button id="voces5" class="voces"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box_capitulo ">
+        <div class="box_texto">
+            <img src="img/papelnegro.jpg" alt="">
+            <div class="back-text">
+                <div class="text-img">
+                <h3>Misión: Mare Nubium </h3>
+                <p>Orion se preparó para adentrarse en Mare Nubium, el umbral de la cueva ante él. La entrada, envuelta en sombras misteriosas y rodeada de un silencio profundo, parecía desafiarlo a probar su coraje. </p>
+                <p> Ahora, tu ayuda será crucial. Mientras Orion avanza en la cueva, te necesitará para superar una serie de pruebas y enigmas que protegerán las gemas. Prepárate para guiar a Orion a través de los oscuros pasadizos y enfrentar los desafíos que se presenten. La verdadera misión está a punto de comenzar. </p>
+
+                <audio id="voz6" src="voz/voz6.mp3"></audio>
+                 <button id="voces6" class="voces"></button>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="juego">
+            <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Breakout la mazmorra del dragón" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/66c65d91a6fae1a44e8e9b1c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+        </div>
+        
+    </div>
+        <div class="box-seguir">
+            <button onclick="mostrarCapitulo(3, this)" id="cap-button" class="button-seguir seguir" type="button">Siguiente</button>
+        </div>
+    </div>
+
+    <div id="capitulo3" class="capitulo">
+    <div class="box_capitulo">
+
+        <div class="dibujo">
+            <div class="sketchfab-embed-wrapper"> <iframe title="Sword" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="2000" height="790" src="https://sketchfab.com/models/4c105af2220646b19e603653745f19cf/embed?autostart=1&ui_hint=0&ui_theme=dark"> </iframe> </div>
+        </div>
+        <div class="box_texto">
+            <img src="img/papelnegro.jpg" alt="">
+            <div class="back-text">
+                <div class="text-img">
+                <h3></h3>
+                <p>Orion ha superado los desafíos de Mare Nubium. Tras resolver los acertijos y enfrentar a las bestias míticas, ha logrado obtener dos de las cuatro gemas del poder: Análisis y Perseverancia. Además, ha conseguido la legendaria espada Excalibur, un arma de inmenso poder y precisión. Con estas dos gemas en su poder y la espada en mano, Orion está más cerca de completar su misión, pero aún queda mucho por hacer. </p>
+
+                <audio id="voz7" src="voz/voz7.mp3"></audio>
+                <button id="voces7" class="voces"></button>
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="box_capitulo ">
+        <div class="box_texto">
+            <img src="img/papelnegro.jpg" alt="">
+            <div class="back-text">
+                <div class="text-img">
+                <h3> </h3>
+                <p>Ahora, la búsqueda de las últimas dos gemas está a punto de comenzar. Prepárate para ayudar a Orion a encontrar las gemas restantes: Creatividad y Cooperatividad. La misión se vuelve más peligrosa a medida que se adentra más en la cueva, ya que el temible dragón guardián se acerca. Mantén la calma y el enfoque, ya que el peligro está cerca y cada movimiento cuenta. </p>
+                <audio id="voz8" src="voz/voz8.mp3"></audio>
+             <button id="voces8" class="voces"></button>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="juego">
+            <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Dragon's Dungeon Breakout" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/66c824d93891457cdf149993" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div> 
+
+        </div>
+        
+    </div>
+        <div class="box-seguir">
+            <button onclick="reiniciarHistoria()" id="cap-button"  class="button-seguir seguir" type="button">Reiniciar</button>
+        </div>
+    </div>
+    <form>
+        <div>
+        <h2 class="form-title">Contactanos</h2>
+        <div class="input-group">
+            <label for="name" class="form-label">Nombre y Apellido</label>
+            <input type="text" name="name" id="name" class="form-input" placeholder="Nombre">
+    
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Email">
+    
+            <label for="mensaje" class="form-label">Dejanos tu Comentario</label>
+            <textarea name="mensaje" id="mensaje" class="form-textarea" cols="30" rows="5" placeholder="Escribe aquí tu comentario"></textarea>
+        </div>
+        <input class=" form-button boton" type="submit" value="Enviar">
+        </div>
+    </form>
+<footer>
+    <div class="footer_redes">
+        <ul>
+            <li id="creadores">Soundtrack</li>
+            <li><a href="https://www.instagram.com/krustykrab.wav/" target="_blank" rel="noopener noreferrer">Krusty Krab Beats</a></li>
+        </ul>
+        
+        <ul>
+            <li id="creadores">Creadores</li>
+            <li><a href="https://www.linkedin.com/in/lara-aylen-pintos-machado-developer/" target="_blank" rel="noopener noreferrer">Lara Aylen Pintos Machado</a></li>
+            <li><a href="https://www.linkedin.com/in/jonathan-palacios-56a97b306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Jonathan Ezequiel Palacios</a></li>
+            
+        </ul>
+    </div>
+    <p>© 2024 ISFT. Todos los derechos reservados.</p>
+</footer>
+    <script src="script.js"></script>
+    <script src="audio.js"></script>
+    <script src="voz.js"></script>
+</body>
+</html>

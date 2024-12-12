@@ -1,0 +1,900 @@
+/*======================= FUENTES =========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Orbitron:wght@400..900&family=Press+Start+2P&family=VT323&display=swap');
+
+.jacquard-24-regular {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
+ .press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/*=======================     =========================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+/*======================= BODY =========================*/
+/*======================= NAV =========================*/
+header {
+    width: 100%;
+    z-index: 20;
+    position: fixed;
+    top: 30px;
+    border: 2px solid #fafafa10;
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+}
+
+nav {
+    display: flex;
+    z-index: 50;
+    align-items: center;
+    justify-content: space-between; /* Cambiado a space-between para distribuir espacio */
+    height: 4rem;
+    padding: 0 1rem; /* Añadir un padding lateral para evitar que el contenido toque los bordes */
+}
+
+.container-icon img {
+    position: absolute;
+    height: 200%;
+    width: auto;
+    top: -2%; /* Ajusta este valor para que el icono sobresalga hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: height 0.5s;
+}
+
+.list-redes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-redes img {
+    height: 30px;
+    width: auto;
+    margin: 1rem;
+    display: block;
+}
+
+
+    /*========= INICIO =============================*/
+
+  /*========= TITULO =========*/
+
+
+  .main-title {
+    width: 40%;
+    
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 100;
+    font-size: 150px;
+    color: #fff;
+    position: absolute;
+    right: 3%;
+    transform: translateY(-10%);
+   
+}
+
+.part-1{
+    text-align: start;
+    left: 0%;
+}
+.part-2{
+    text-align: end;
+}
+/* Estilo para las partes del título */
+.title-part {
+    display: block; /* Hace que cada palabra se muestre en su propia línea */
+    transition: text-shadow 0.5s, color 0.5s;
+    
+}
+
+/* Estilo para el hover en el h1 */
+.main-title:hover .title-part {
+    color: #f3dc9c;
+    text-shadow: 0 0 35px rgba(243, 208, 168, 0.5);
+}
+
+
+
+
+/*========= BOX-AudioPato =========*/
+.box-audioPato{
+    display: block;
+    position: fixed;
+    bottom: 12%;
+    left: 0.9%;
+    z-index: 50;
+}
+
+/*========= AUDIO =========*/
+.box_audio{
+    display: flex;
+}
+.audio-player {
+
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-image: url(img/backaudio.jpeg); 
+    background-size: cover; /* Ajusta la imagen para cubrir la caja */
+    background-position: center; /* Centra la imagen dentro de la caja */
+    padding: 5px;
+    width: 200px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    
+    
+}
+
+#play-pause.play {
+    background: url('img/play-svgrepo-com.svg') no-repeat center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#play-pause.pause {
+    background: url('img/pause-svgrepo-com.svg') no-repeat center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#volume {
+    width: 100px; /* Ajusta el tamaño de la barra de volumen */
+    cursor: pointer;
+    background-color: #e6af37;
+}
+
+/* Estilo para la barra de volumen */
+#volume {
+    -webkit-appearance: none; /* Elimina el estilo predeterminado del slider */
+    width: 100px; /* Ajusta el tamaño de la barra de volumen */
+    background-color: #e6af37; /* Color de fondo para el slider */
+    height: 8px; /* Altura de la barra de volumen */
+    border-radius: 5px; /* Redondea las esquinas de la barra */
+}
+
+/* Estilo para el track de la barra de volumen en navegadores WebKit */
+#volume::-webkit-slider-runnable-track {
+    background-color: #e6af37; /* Color de la barra de volumen */
+    height: 8px; /* Altura de la barra de volumen */
+    border-radius: 5px; /* Redondea las esquinas de la barra */
+}
+
+/* Estilo para el thumb (control deslizante) en navegadores WebKit */
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Elimina el estilo predeterminado del thumb */
+    width: 16px; /* Ancho del control deslizante */
+    height: 16px; /* Alto del control deslizante */
+    background-color: #fff; /* Color del control deslizante */
+    border-radius: 50%; /* Redondea el control deslizante */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el control deslizante */
+}
+
+/* Estilo para la barra de volumen en Firefox */
+#volume::-moz-range-track {
+    background-color: #e6af37; /* Color de la barra de volumen */
+    height: 8px; /* Altura de la barra de volumen */
+    border-radius: 5px; /* Redondea las esquinas de la barra */
+}
+
+/* Estilo para el thumb (control deslizante) en Firefox */
+#volume::-moz-range-thumb {
+    width: 16px; /* Ancho del control deslizante */
+    height: 16px; /* Alto del control deslizante */
+    background-color: #fff; /* Color del control deslizante */
+    border-radius: 50%; /* Redondea el control deslizante */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el control deslizante */
+}
+
+/*========== GIF - DUCK ==========*/
+.box_gif {
+    display: flex;
+    position: relative;
+    bottom: -15px;
+    z-index: 45;
+   
+}
+
+.gif{
+    width: 150px;
+}
+
+/*========= CAPITULOS =========*/
+.capitulo{
+    justify-content: right;
+}
+
+.box_capitulo {
+   /* border: 2px solid #cee284; */
+    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas pequeñas */
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1.2px; 
+    padding-bottom: 5%;
+}
+.box_dibujo{
+    
+}
+.dibujo {
+     /*border: 2px solid #4CAF50; */
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    
+    margin: auto;
+    width: 50%;
+    height: auto;
+    
+    justify-content: center;
+    align-items: center; 
+}
+
+.sketchfab-embed-wrapper >iframe{
+    width: 350;
+     height: 350;
+
+}
+
+.juego{
+    background: #000;
+    backdrop-filter: blur(0.4rem);
+    margin: auto;
+    width: 65%;
+    height: 790px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.sketchfab-embed-wrapper iframe {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.box_texto {
+    font-family: "Orbitron", sans-serif;
+    position: relative; 
+    max-width: 600px;
+    height: 600px;
+    margin: auto;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.5s, color 0.9s;
+}
+
+.box_texto:hover {
+    box-shadow: 0 0 50px rgba(243, 208, 168, 0.5);
+}
+
+.box_texto img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.back-text {
+    position: absolute; 
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-img > h3 {
+    margin-bottom: 9px;
+}
+
+.text-img > p {
+    margin-bottom: 9px;
+
+}
+
+.text-img {
+    width: 100%;
+    height: 100%;
+    padding: 50px; 
+    box-sizing: border-box;
+}
+    /*========= boton =========*/
+
+.voces {
+    background: url('img/speaker-2-svgrepo-com.svg') no-repeat center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#voces2{
+    display: none;
+}
+
+.box-seguir{
+    display: flex;
+    position: static;
+    justify-content: end;
+    margin: 1.5%;
+    
+}
+
+
+.button-seguir {
+
+    background: linear-gradient(145deg, #ffcc00, #ff9900); 
+    color: #000;
+    border: 2px solid #ff9900;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.5); 
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+}
+.seguir{
+    
+    
+}
+
+.button-seguir:hover {
+    background: linear-gradient(145deg, #ff9900, #ffcc00); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.7); 
+}
+
+.button-reiniciar{
+    position: absolute; 
+    bottom: 900%;
+    right: 5%;
+    background: linear-gradient(145deg, #ffcc00, #ff9900); 
+    color: #000;
+    border: 2px solid #ff9900;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.5); 
+    transition: all 0.3s ease-in-out;
+    z-index: 15;
+}
+
+.button-reiniciar:hover {
+    background: linear-gradient(145deg, #ff9900, #ffcc00); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.7); 
+}
+
+/*========= INICIO =============================*/
+
+
+   /*========== NARRATIVA ==========*/
+
+
+ .narrativa{
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 0.9%;
+ }
+
+.narrativatxt{
+    
+    margin: auto;
+    margin-top: 5%;
+    z-index: 15;
+}
+
+.narrativa_img{
+    width: 45%;
+    margin: auto;
+    position: absolute;
+    transform: translateX(-15%);
+    transform: translateY(-10%);
+    z-index: 0;
+}
+.narrativa_img > img{
+    width: 100%;
+    margin: auto;
+}
+
+.button-inicio{
+    
+}
+.box-iniciar{
+    display: flex;
+    position: static;
+    justify-content: end;
+    margin: 1.5%;
+    margin-top: -0.5%;
+    transform: translateY(-200%);
+}
+
+/*========== NARRATIVA - buttons ==========*/
+
+.btn-narrativa{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    z-index: 45;
+    background: none;
+    border: 2px solid #ffd700; 
+    border-radius: 10px;
+    color: #ffd700; 
+    padding: 8px 18px;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5), 0px 0px 20px rgba(255, 255, 255, 0.1); /* Sombra dorada */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-narrativa:hover {
+    
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.7), 0px 0px 25px rgba(255, 255, 255, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+.btn-narrativa:active {
+    transform: scale(0.98);
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3), 0px 0px 15px rgba(255, 255, 255, 0.1); /* Sombra reducida al hacer clic */
+}
+
+
+/*======================= form =========================*/
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form> div{
+    display: block;
+    padding: 2%;
+    border: 2px solid#fafafa10;
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    margin: 5%;
+    margin-bottom: 1%;
+}
+
+input, select, textarea, button, label,h2 {
+    font-family: "Orbitron", sans-serif; 
+}
+
+
+.form-title {
+    color: #ffcc00;
+    text-align: center;
+    font-size: 2em;
+    margin: 2.5%;
+  
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.form-label {
+    color: #ffcc00;
+    font-size: 1.1em;
+}
+
+.form-input, .form-textarea {
+    
+    background-color: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.form-button {
+    
+    background-color: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+.form-button:hover {
+    background-color: #ffcc00;
+    color: #000;
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+
+
+
+/*========== FOOTER ==========*/
+
+footer{
+    
+    width: 100%;
+    color: #f3dc9c;
+    
+    padding: 1%;
+    padding-bottom: 0.5%;
+    
+    border: 2px solid#fafafa10;
+    background: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    
+}
+
+footer > p{
+    display: flex;
+    justify-content: center;
+    
+}
+.footer_redes{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.footer_redes > ul{
+    position: relative;
+    margin: auto;
+    list-style: none;
+
+   
+}
+.footer_redes ul > li{
+    margin-bottom: 15px;
+    
+}
+.footer_redes ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #f3dc9c;
+}
+
+.footer_redes ul li::before {
+    content: '>'; 
+    position: relative;
+    left: -10px;
+    
+    transform: translateY(-50%);
+    font-size: 20px; 
+    color: #f3dc9c;
+}
+
+#creadores::before{
+    content: none; 
+}
+
+
+
+
+
+/*======================= MEDIA QUERIES =========================*/
+
+@media (max-width: 1489px) {
+        /*======================= BOX-INICIO =========================*/
+        
+        .capitulo{
+            display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    
+        .main-title {
+            left: 30%;
+            z-index: 15;
+        }
+        
+        .part-1{
+            text-align: start;
+            
+            
+        }
+        .part-2{
+            text-align: end;
+            right: 10%;
+        }
+        .narrativatxt {
+           
+         
+            margin-top: 250px;
+            
+        }
+        
+}
+
+@media (max-width: 960px) {
+
+    .dibujo {
+        width: 100%; 
+        height: 200px; 
+
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+
+    /*======================= NAV =========================*/
+
+    nav {
+        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+        justify-content: center;
+    }
+
+    .container-icon img {
+        height: 150%; /* Ajustar la altura del icono en pantallas más pequeñas */
+        top: -5%; /* Ajusta según sea necesario */
+    }
+
+    .list-redes {
+        justify-content: flex-start; /* Alinear elementos de la lista a la izquierda */
+        margin-top: 1rem; /* Añadir un margen superior */
+        
+    }
+
+    /*======================= DUCK =========================*/
+    .box_audio{
+        
+    }
+    .gif{
+       width: 100px;
+       margin-bottom: 5px;
+    }
+
+
+    /*======================= BOX-INICIO =========================*/
+    #inicio{
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+        
+    }
+    .narrativa{
+      
+
+    }
+
+    .box-iniciar{
+        display: block;
+
+    }
+    .capitulo{
+        
+        justify-content: center;
+    }
+    .narrativa_img {
+        display: none; /* Ocultar imagen en pantallas pequeñas */
+    }
+
+    .main-title {
+       
+       margin: auto;
+       margin-top: 100px;
+        position: static;
+        width: 50%;
+        font-size: 100px; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+
+    .narrativatxt {
+        width: 100%; /* Texto narrativo más ancho */
+        text-align: center;
+        margin: auto;
+        margin-top: 0%;
+    }
+
+    .box-iniciar{
+        display: flex;
+        position: static;
+        justify-content: end;
+        margin: 1.5%;
+        
+        transform: translateY(0);
+
+    }
+
+
+    /*======================= BOX-CAPITULOS =========================*/
+    
+  
+
+    .juego {
+        width: 100%; /* Asegura que el juego ocupe el ancho completo */
+        height: 400px; /* Ajusta la altura del iframe del juego */
+    }
+
+    .box_texto {
+        
+        height: auto; 
+    }
+
+    .text-img {
+        padding: 10%; 
+        font-size: 0.9rem;
+    }
+
+    .box_capitulo {
+       
+        width: 427px;
+        
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 5%;
+       
+    }
+
+    .box-seguir button {
+        
+    }
+
+    /*======================= FOOTER =========================*/
+
+    footer{
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    
+
+    nav {
+        padding: 0 0.5rem; 
+    }
+
+    .list-redes img {
+        height: 25px; 
+    }
+
+    .dibujo, .juego {
+        height: 300px; 
+    }
+
+    .text-img {
+        
+        font-size: 0.7rem;
+    }
+
+
+    .btn-narrativa{
+        padding: 5px 15px;
+        font-size: 11px;
+
+    }
+
+    .button-seguir {
+
+        
+        padding: 10px 25px;
+        
+        font-size: 16px;
+        
+    }
+    .box_texto img {
+        
+    }
+    .main-title {
+       
+        margin: auto;
+        margin-top: 100px;
+        position: static;
+        width: 100%;
+        font-size: 96px; 
+     }
+ 
+
+    .box_capitulo {
+       
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        margin: auto;
+       
+    }
+
+    form > div{
+        width: 100%;
+        margin: 5%;
+    }
+    .input-group {
+        
+        gap: 15px;
+        margin: 20px auto;
+        max-width: 85%;
+    }
+
+     /*======================= FOOTER =========================*/
+
+     footer{
+        width: 100%;
+        font-size: 12px;
+        
+    }
+}
+
+/*========== NARRATIVA - SCRIPT ==========*/
+.capitulo {
+    display: none;
+    
+}
